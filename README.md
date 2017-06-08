@@ -6,4 +6,4 @@ Graphical program using the SDL framework to create a particle explosion. The pa
 
 
 ## Compiling
-Run _make_ in the command line and then run the _run_ executable.
+Run `make` in the command line and then run the `run` executable.

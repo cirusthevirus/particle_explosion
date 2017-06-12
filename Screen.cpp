@@ -127,9 +127,9 @@ void Screen::gaussian_blur() {
                 }
             }
 
-            Uint8 red = red_tot / 5;
-            Uint8 green = green_tot / 5;
-            Uint8 blue = blue_tot / 5;
+            Uint8 red = red_tot;
+            Uint8 green = green_tot;
+            Uint8 blue = blue_tot;
 
             set_pixel(x, y, red, green, blue);
         }

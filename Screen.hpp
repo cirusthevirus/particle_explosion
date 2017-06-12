@@ -27,11 +27,13 @@ private:
     Uint32* m_buffer1;
     Uint32* m_buffer2;
     SDL_Event event;
-    const double m_blur[3][3] = {{0.5, 0.5, 0.5},
-                                 {0.5, 0.5, 0.5},
-                                 {0.5, 0.5, 0.5}};
+    // Currently implementing a box blur as the gaussian blur did not
+    // provide enough blur to create particle trails.
+    const double m_blur[3][3] = {{0.1, 0.1, 0.1},
+                                 {0.1, 0.1, 0.1},
+                                 {0.1, 0.1, 0.1}};
 };
 
-} // namespace jb
+} // namespace jhb
 
 #endif // SCREEN_HPP_
